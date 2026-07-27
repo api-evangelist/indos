@@ -1,7 +1,28 @@
 aid: indos
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/indos.png
 name: INDOS
-description: INDOS is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: INDOS (Garment IO) is an AI-powered manufacturing operations platform built for
+  labor-intensive garment and apparel production facilities. Its cloud-based system unifies
+  Manufacturing Execution (MES), Quality Management (QMS), Maintenance Management (MMS), and
+  Warehouse Management (WMS) into a single real-time view of the factory floor. A shop-floor
+  hardware device captures operator and production-line data, and the platform surfaces
+  operator efficiency, AI anomaly detection, performance scorecards, and end-to-end control
+  from cutting through packing. Founded by Ahmed Nounou and Mahmoud Sabae and backed by
+  500 Global, it serves garment manufacturers across the Middle East, North Africa, and
+  South Asia. INDOS does not currently publish a public developer API, SDKs, or developer
+  documentation; this profile captures its identity, web properties, and domain-security
+  posture for the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/indos/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Manufacturing
+- Apparel
+- Garment
+- Industrial IoT
+- Manufacturing Execution
+- Quality Management
+- Factory Operations
+- Artificial Intelligence
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +51,19 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/indos-domain-security.yml
 - type: Website
-  url: https://garment.io
+  url: https://garment.io/en
+- type: Support
+  url: https://garmentio.zohodesk.com/portal/en/home
+  name: Garment IO Knowledge Base
+- type: PrivacyPolicy
+  url: https://garment.io/en/privacy-policy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/garmentio
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
